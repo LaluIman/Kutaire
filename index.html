@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,42 +8,58 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="./output.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+  <style>
+    section{
+        padding:  4rem 0 4rem 0;
+    }
+  </style>
 </head>
 <body class=" bg-gradient-to-b from-gray-50 via-transparent to-orange-50">
     <!-- navbar -->
-        <nav class="bg-white border-gray-300 fixed w-full z-50 border-b-2">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <span class="self-center text-2xl font-semibold whitespace-nowrap text-orange-500 font-serif">Kutaire</span>
-            </a>
-            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-default" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-                </svg>
-            </button>
-            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-100 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white ">
-                <li>
-                    <a href="#" class="block py-2 px-3 text-gray-900 rounded transition-all hover:text-orange-500 hover:bg-gray-200 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0">Beranda</a>
-                </li>
-                <li>
-                    <a href="#" class="block py-2 px-3 text-gray-900 rounded transition-all hover:text-orange-500 hover:bg-gray-200 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0">Tentang</a>
-                </li>
-                <li>
-                    <a href="#" class="block py-2 px-3 text-gray-900 rounded transition-all hover:text-orange-500 hover:bg-gray-200 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0">Layanan</a>
-                </li>
-                <li>
-                    <a href="#" class="block py-2 px-3 text-gray-900 rounded transition-all hover:text-orange-500 hover:bg-gray-200 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0">Kontak</a>
-                </li>
-                </ul>
-            </div>
-            </div>
-        </nav>
-  
-  
+    <nav class="bg-white border-gray-300 fixed w-full z-50 border-b-2">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap text-orange-500 font-serif">Kutaire</span>
+          </a>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-100 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white ">
+              <li>
+                <a href="#beranda" class="block py-2 px-3 text-gray-900 rounded transition-all hover:text-orange-500 hover:bg-gray-200 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 close-nav">Beranda</a>
+              </li>
+              <li>
+                <a href="#tentang" class="block py-2 px-3 text-gray-900 rounded transition-all hover:text-orange-500 hover:bg-gray-200 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 close-nav">Tentang</a>
+              </li>
+              <li>
+                <a href="#layanan" class="block py-2 px-3 text-gray-900 rounded transition-all hover:text-orange-500 hover:bg-gray-200 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 close-nav">Layanan</a>
+              </li>
+              <li>
+                <a href="#kontak" class="block py-2 px-3 text-gray-900 rounded transition-all hover:text-orange-500 hover:bg-gray-200 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 close-nav">Kontak</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <script>
+            const closeLinks = document.querySelectorAll('.close-nav');
+            
+            closeLinks.forEach(link => {
+              link.addEventListener('click', () => {
+                const navbar = document.getElementById('navbar-default');
+                navbar.classList.add('hidden'); // Hides the navbar by adding the "hidden" class
+              });
+            });
+        </script>
+      </nav>
+        
     <!-- hero -->
-    <section class="relative overflow-hidde pt-36 pb-16 lg:pb-24 xl:pb-32 xl:pt-40">
+    <section id="beranda" class="relative overflow-hidde pt-36 pb-16 lg:pb-24 xl:pb-32 xl:pt-40">
         <div class="relative z-10">
             <div class="absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 justify-center overflow-hidden [mask-image:radial-gradient(50%_45%_at_50%_55%,white,transparent)]">
                 <svg class="h-[60rem] w-[100rem] flex-none stroke-orange-600 opacity-20" aria-hidden="true">
@@ -90,22 +106,22 @@
     </section>
 
     <!-- about -->
-    <section class="relative overflow-hidden">
+    <section id="tentang" class="relative overflow-hidden">
         <div class="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
                 <div class="max-w-lg">
-                    <h2 class="text-4xl font-semibold text-gray-900"><span class="font-extrabold text-orange-500">Kutaire:</span> Layanan yang Didasarkan pada Suara Anda</h2>
+                    <h2 class="text-4xl md:leading-3 md:text-6xl font-semibold text-gray-900"><span class="font-extrabold text-orange-500">Kutaire</span> <span class="text-4xl">Layanan yang Didasarkan pada Suara Anda</span></h2>
                     <p class="mt-4 text-gray-600 text-lg">Di tengah kesibukan dunia yang tak pernah berhenti, kami sadar bahwa kebutuhan dan harapan Anda terus berubah. Oleh karena itu, Kutaire tidak hanya berkomitmen untuk memberikan layanan terbaik, tetapi juga untuk terus belajar dan tumbuh bersama Anda.</p>
                 </div>
                 <div class="mt-12 md:mt-0">
-                    <img src="src/img/survey.jpg" class="object-cover rounded-lg shadow-md">
+                    <img src="src/img/survey.jpg" class="object-cover rounded-3xl shadow-xl">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- service -->
-    <section class="relative overflow-hidden">
+    <section id="layanan" class="relative overflow-hidden">
         <div class="max-w-4xl mx-auto text-center mt-12 ">
             <h1 class="text-4xl font-bold md:text-6xl  border-b pb-2 leading-tight mb-2">
                 Mengapa Kutaire <span class="text-orange-500">Berbeda?</span> 
@@ -168,6 +184,203 @@
             </div>
         </div>
     </section>
+
+    <!-- testimnonial -->
+    <section id="testimonials" >
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center mt-12 ">
+                <h1 class="text-4xl font-bold md:text-6xl  border-b pb-2 leading-tight mb-2">
+                    Apa yang dikatakan <span class="text-orange-500">Orang orang?</span>
+                </h1>
+              </div>
+          <ul role="list"
+            class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3">
+            <!-- card -->
+            <li>
+              <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
+                <li>
+                  <figure class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10 border"><svg aria-hidden="true"
+                      width="105" height="78" class="absolute left-6 top-6 fill-slate-100">
+                      <path
+                        d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z">
+                      </path>
+                    </svg>
+                    <blockquote class="relative">
+                      <p class="text-lg tracking-tight text-slate-900">I love the fitness apparel and gear I purchased from
+                        this site. The quality is exceptional and the prices are unbeatable.</p>
+                    </blockquote>
+                    <figcaption class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                      <div>
+                        <div class="font-display text-base text-slate-900">Sheryl Berge</div>
+                      </div>
+                      <div class="overflow-hidden rounded-full bg-slate-50">
+                        <img alt="" class="h-14 w-14 object-cover" style="color:transparent" src="https://randomuser.me/api/portraits/men/15.jpg">
+                      </div>
+                    </figcaption>
+                  </figure>
+                </li>
+              </ul>
+            </li>
+            <!-- card -->
+            <li>
+              <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
+                <li>
+                  <figure class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10 borde"><svg aria-hidden="true"
+                      width="105" height="78" class="absolute left-6 top-6 fill-slate-100">
+                      <path
+                        d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z">
+                      </path>
+                    </svg>
+                    <blockquote class="relative">
+                      <p class="text-lg tracking-tight text-slate-900">As a professional athlete, I rely on high-performance
+                        gear for my training. This site offers a great selection of top-notch products.</p>
+                    </blockquote>
+                    <figcaption class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                      <div>
+                        <div class="font-display text-base text-slate-900">Leland Kiehn</div>
+                      </div>
+                      <div class="overflow-hidden rounded-full bg-slate-50">
+                        <img alt="" class="h-14 w-14 object-cover" style="color:transparent" src="https://randomuser.me/api/portraits/women/15.jpg">
+                      </div>
+                    </figcaption>
+                  </figure>
+                </li>
+              </ul>
+            </li>
+            <!-- card -->
+            <li>
+              <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
+                <li>
+                  <figure class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10 borde"><svg aria-hidden="true"
+                      width="105" height="78" class="absolute left-6 top-6 fill-slate-100">
+                      <path
+                        d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z">
+                      </path>
+                    </svg>
+                    <blockquote class="relative">
+                      <p class="text-lg tracking-tight text-slate-900">The fitness apparel I bought here fits perfectly and
+                        feels amazing. I highly recommend this store to anyone looking for quality gear.</p>
+                    </blockquote>
+                    <figcaption class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                      <div>
+                        <div class="font-display text-base text-slate-900">Peter Renolds</div>
+                      </div>
+                      <div class="overflow-hidden rounded-full bg-slate-50">
+                        <img alt="" class="h-14 w-14 object-cover" style="color:transparent" src="https://randomuser.me/api/portraits/men/10.jpg">
+                      </div>
+                    </figcaption>
+                  </figure>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    <!-- contact -->
+    <section id="kontak">
+        <div class="flex py-10 flex-col justify-center sm:py-12">
+            <div class="relative -z-10">
+                <div class="absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 justify-center overflow-hidden [mask-image:radial-gradient(50%_45%_at_50%_55%,white,transparent)]">
+                    <svg class="h-[60rem] w-[100rem] flex-none stroke-orange-600 opacity-20" aria-hidden="true">
+                        <defs>
+                            <pattern id="e9033f3e-f665-41a6-84ef-756f6778e6fe" width="200" height="200" x="50%" y="50%"
+                                patternUnits="userSpaceOnUse" patternTransform="translate(-100 0)">
+                                <path d="M.5 200V.5H200" fill="none"></path>
+                            </pattern>
+                        </defs>
+                        <svg x="50%" y="50%" class="overflow-visible fill-orange-50">
+                            <path d="M-300 0h201v201h-201Z M300 200h201v201h-201Z" stroke-width="0"></path>
+                        </svg>
+                        <rect width="100%" height="100%" stroke-width="0" fill="url(#e9033f3e-f665-41a6-84ef-756f6778e6fe)">
+                        </rect>
+                    </svg>
+                </div>
+            </div>
+            <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+                <div
+                    class="absolute inset-0 bg-gradient-to-r from-orange-400 to-orange-300 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
+                </div>
+                <div class="text-white relative px-4 py-10 bg-orange-500 shadow-lg sm:rounded-3xl sm:p-20">
+        
+                    <div class="text-center pb-6">
+                        <h1 class="text-3xl font-bold md:text-5xl">HUBUNGI KAMI</h1>
+    
+                        <p class="p-5 md:text-2xl text-gray-100">
+                            Ingin tahu apa yang dapat kami lakukan untuk anda?
+                        </p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <a href="https://wa.me/6282155521996?text=" class="bg-orange-100 text-orange-600 font-bold py-2 px-4 md:text-xl rounded">
+                           Chat kami sekarang
+                       </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="py-10">
+        <div class="text-center">
+            <a href="#" class="flex items-center justify-center mb-5 text-2xl font-semibold text-orange-500 font-serif">
+                Kutaire
+            </a>
+        
+            <span class="block text-sm text-center text-gray-500">© Kutaire. All Rights Reserved.
+            </span>
+        
+            <ul class="flex justify-center mt-5 space-x-5">
+                <li>
+                    <a href="#" class="text-gray-500 hover:text-gray-900">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-500 hover:text-gray-900">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-500 hover:text-gray-900">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-500 hover:text-gray-900">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-500 hover:text-gray-900">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
 
     <!-- js -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
