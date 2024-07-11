@@ -13,7 +13,7 @@ closeLinks.forEach(link => {
 ScrollReveal({ 
     reset: true,
     distance:'75px',
-    duration:1500,
+    duration:1000,
     delay:50
  });
 
