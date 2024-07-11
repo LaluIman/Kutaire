@@ -10,8 +10,8 @@ closeLinks.forEach(link => {
 
 // scroll reveal
 ScrollReveal({ 
-    //reset: true,
-    distance:'70px',
+    reset: true,
+    distance:'75px',
     duration:1500,
     delay:50
  });
